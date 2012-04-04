@@ -154,16 +154,3 @@ help - what do you think?
   end
 
 end
-
-if __FILE__ == $0
-  HangedMan::Game.new(
-    HangedMan::Challenge.new(
-      *DATA.read.split("\n$$$ CUT $$$ CUT $$$\n").map(&:chomp) 
-    )
-  ).run
-end
-
-__END__
-puts "Hello, world!"
-$$$ CUT $$$ CUT $$$
-____ "_____, world_"
