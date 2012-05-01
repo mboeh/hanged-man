@@ -101,7 +101,7 @@ class HangedMan::Game
       puts @message
       msg
       print "> "
-      command = gets
+      command = STDIN.gets
       unless command =~ /^\s*$/
         if command =~ /^[^ ]\s*$/
           try command.chars.first
